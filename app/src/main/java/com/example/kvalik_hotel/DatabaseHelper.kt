@@ -12,7 +12,9 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
     companion object {
         private const val DATABASE_NAME = "hotel.db"
-        private const val DATABASE_VERSION = 3
+        // Повысим версию БД, чтобы при обновлении приложения тестовые брони перечитались и
+        // вставились в таблицу
+        private const val DATABASE_VERSION = 4
 
         // Таблица пользователей
         private const val TABLE_USERS = "users"
