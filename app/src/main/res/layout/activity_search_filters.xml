@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск номеров"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата заезда"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etCheckInDate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Выберите дату заезда"
+        android:focusable="false"
+        android:clickable="true"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата выезда"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etCheckOutDate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Выберите дату выезда"
+        android:focusable="false"
+        android:clickable="true"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество гостей"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etGuestCount"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Введите количество гостей"
+        android:inputType="number"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Найти"
+        android:textSize="16sp"
+        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Назад"
+        android:textSize="16sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+</LinearLayout>

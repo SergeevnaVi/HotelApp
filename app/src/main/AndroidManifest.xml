@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kvalik_hotel">
+
+    <application
+        android:allowBackup="true"
+        android:label="Hotel App"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HotelApp">
+        
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SearchFiltersActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity" />
+
+        <activity
+            android:name=".RoomListActivity"
+            android:exported="false"
+            android:parentActivityName=".SearchFiltersActivity" />
+
+        <activity
+            android:name=".AllRoomsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity" />
+
+        <activity
+            android:name=".RoomDetailsActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
